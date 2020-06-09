@@ -10,30 +10,20 @@ package com.g5blackdesign.tp3testing.Entidades;
  * @author federico
  */
 public class DetalleCarrito {
-    private int idproducto;
-    private int idcarrito;
     private int cantidad;
+    private Producto producto;
 
-    public DetalleCarrito(int idproducto, int idcarrito, int cantidad) {
-        this.idproducto = idproducto;
-        this.idcarrito = idcarrito;
+    public DetalleCarrito(int cantidad, Producto producto) {
         this.cantidad = cantidad;
+        this.producto = producto;
     }
 
-    public int getIdproducto() {
-        return idproducto;
+    public Producto getProducto() {
+        return producto;
     }
 
-    public void setIdproducto(int idproducto) {
-        this.idproducto = idproducto;
-    }
-
-    public int getIdcarrito() {
-        return idcarrito;
-    }
-
-    public void setIdcarrito(int idcarrito) {
-        this.idcarrito = idcarrito;
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 
     public int getCantidad() {
